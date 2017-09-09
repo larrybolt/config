@@ -1,5 +1,5 @@
 {
-  "title": "Caps to ctrl, escape if alone. Shifts to parens",
+  "title": "Larry's personal config: Caps to ctrl, escape if alone. Shifts to parens. Tab becomes hyper if combined",
   "rules": [
     {
       "description": "Post escape if caps is pressed alone, left_ctrl otherwise",
@@ -8,48 +8,36 @@
           "from": {
             "key_code": "caps_lock",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": [ "any" ]
             }
           },
           "to": [
-            {
-              "key_code": "left_control"
-            }
+            {"key_code": "left_control"}
           ],
           "to_if_alone": [
-            {
-              "key_code": "escape"
-            }
+            {"key_code": "escape"}
           ],
           "type": "basic"
         }
       ]
     },
     {
-      "description": "Post left parens if left-shift is pressed alone",
+      "description": "Post left ( parens if left-shift is pressed alone",
       "manipulators": [
         {
           "from": {
             "key_code": "left_shift",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": [ "any" ]
             }
           },
           "to": [
-            {
-              "key_code": "left_shift"
-            }
+            {"key_code": "left_shift"}
           ],
           "to_if_alone": [
             {
               "key_code": "9",
-              "modifiers": [
-                "left_shift"
-              ]
+              "modifiers": ["left_shift"]
             }
           ],
           "type": "basic"
@@ -57,28 +45,22 @@
       ]
     },
     {
-      "description": "Post right parens if right-shift is pressed alone",
+      "description": "Post right ) parens if right-shift is pressed alone",
       "manipulators": [
         {
           "from": {
             "key_code": "right_shift",
             "modifiers": {
-              "optional": [
-                "any"
-              ]
+              "optional": [ "any" ]
             }
           },
           "to": [
-            {
-              "key_code": "right_shift"
-            }
+            {"key_code": "right_shift"}
           ],
           "to_if_alone": [
             {
               "key_code": "0",
-              "modifiers": [
-                "right_shift"
-              ]
+              "modifiers": ["right_shift"]
             }
           ],
           "type": "basic"

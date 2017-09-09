@@ -66,6 +66,33 @@
           "type": "basic"
         }
       ]
+    },
+    {
+      "description": "Tab to hyper if not pressed alone",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "optional": [ "any" ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_command",
+              "modifiers": [
+                "left_control",
+                "left_shift",
+                "left_option",
+              ]
+            }
+          ],
+          "to_if_alone": [
+            {"key_code": "tab"}
+          ],
+          "type": "basic"
+        }
+      ]
     }
   ]
 }

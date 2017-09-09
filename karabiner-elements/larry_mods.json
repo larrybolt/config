@@ -1,5 +1,5 @@
 {
-  "title": "Larry's personal config: Caps to ctrl, escape if alone. Shifts to parens. Tab becomes hyper if combined",
+  "title": "Larrys personal config: Caps to ctrl, escape if alone. Shifts to parens. Tab becomes hyper if combined",
   "rules": [
     {
       "description": "Post escape if caps is pressed alone, left_ctrl otherwise",
